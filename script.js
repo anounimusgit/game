@@ -7,7 +7,7 @@ const scoreDisplay = document.getElementById("score");
 
 let fotos = Array.from(document.querySelectorAll(".foto"));
 let heartImg = new Image();
-heartImg.src = "file:///Users/ti/Downloads/new-project/jogo/heart.png";
+heartImg.src = "https://anounimusgit.github.io/game/heart.png";
 
 let heart, pipes, frame, gameOver, score;
 let fraseIndex = 0;
