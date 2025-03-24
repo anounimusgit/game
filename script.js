@@ -13,7 +13,7 @@ let heart, pipes, frame, gameOver, score;
 let fraseIndex = 0;
 
 const frases = [
-  "Você faz meu coração pular mais alto que esse coraçãozinho.",
+  "Você é a melhor parte do meu dia.",
   "Game over? Só se for pra recomeçar ao seu lado.",
   "Jogar contigo é meu passatempo favorito.",
   "O único nível difícil é ficar longe de você.",
