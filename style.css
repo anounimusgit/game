@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background-color: #ffe6f0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  canvas {
+    background: #ffccdd;
+    border: 3px solid #ff99bb;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  #startBtn, #restartBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ff99bb;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff6699;
+    z-index: 2;
+  }
+  
+  #mensagem {
+    margin-top: 10px;
+    background: #fff0f5;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    box-shadow: 0 0 10px #ff6699;
+    text-align: center;
+    display: none;
+    max-width: 90vw;
+  }
+  
+  #score {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 16px;
+    color: #b30059;
+    font-weight: bold;
+    z-index: 2;
+  }
+  
+  #fotosContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .foto {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+    animation: flutuar 20s infinite linear;
+  }
+  
+  @keyframes flutuar {
+    0% {
+      transform: translateY(100vh) translateX(0);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-120vh) translateX(100px);
+      opacity: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #startBtn, #restartBtn {
+      font-size: 16px;
+      padding: 12px 20px;
+    }
+    #mensagem {
+      font-size: 18px;
+    }
+    .foto {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
