@@ -128,3 +128,7 @@ restartBtn.addEventListener("click", () => {
   resetGame();
   update();
 });
+
+document.addEventListener('gesturestart', function (e) {
+  e.preventDefault();
+});
