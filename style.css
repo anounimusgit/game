@@ -17,6 +17,7 @@ body {
     border-radius: 12px;
     position: relative;
     z-index: 1;
+    /* mantém proporção original do canvas, sem distorção */
   }
   
   #startBtn, #restartBtn {
@@ -27,7 +28,7 @@ body {
     background: #ff99bb;
     border: none;
     padding: 15px 25px;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 12px;
     cursor: pointer;
     box-shadow: 0 0 10px #ff6699;
@@ -35,12 +36,12 @@ body {
   }
   
   #mensagem {
-    margin-top: 10px;
+    margin-top: 20px;
     background: #fff0f5;
-    padding: 20px;
-    border-radius: 15px;
-    font-size: 20px;
-    box-shadow: 0 0 10px #ff6699;
+    padding: 25px 30px;
+    border-radius: 18px;
+    font-size: 24px;
+    box-shadow: 0 0 15px #ff6699;
     text-align: center;
     display: none;
     max-width: 90vw;
@@ -48,9 +49,9 @@ body {
   
   #score {
     position: absolute;
-    top: 10px;
-    left: 15px;
-    font-size: 16px;
+    top: 20px;
+    left: 25px;
+    font-size: 24px;
     color: #b30059;
     font-weight: bold;
     z-index: 2;
@@ -92,11 +93,15 @@ body {
   
   @media (max-width: 480px) {
     #startBtn, #restartBtn {
-      font-size: 16px;
-      padding: 12px 20px;
+      font-size: 18px;
+      padding: 14px 22px;
     }
     #mensagem {
-      font-size: 18px;
+      font-size: 22px;
+      padding: 18px;
+    }
+    #score {
+      font-size: 20px;
     }
     .foto {
       width: 50px;
