@@ -7,7 +7,7 @@ const scoreDisplay = document.getElementById("score");
 
 let fotos = Array.from(document.querySelectorAll(".foto"));
 let heartImg = new Image();
-heartImg.src = "https://anounimusgit.github.io/game/heart.png";
+heartImg.src = "file:///Users/ti/Downloads/new-project/jogo/heart.png";
 
 let heart, pipes, frame, gameOver, score;
 let fraseIndex = 0;
@@ -110,6 +110,10 @@ function endGame() {
 }
 
 document.addEventListener("keydown", () => {
+  if (!gameOver) heart.velocity = heart.jump;
+});
+
+document.addEventListener("touchstart", () => {
   if (!gameOver) heart.velocity = heart.jump;
 });
 
