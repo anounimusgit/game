@@ -1,35 +1,35 @@
 body {
-    background: #ffeef2;
-    font-family: 'Comic Sans MS', sans-serif;
-    text-align: center;
-    padding: 0;
-    color: #d6336c;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
+  background: #ffeef2;
+  font-family: 'Comic Sans MS', sans-serif;
+  text-align: center;
+  padding: 0;
+  color: #d6336c;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
 .cartinhas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .carta {
-    font-size: 60px;
-    cursor: pointer;
-    transition: transform 0.3s;
-    animation: flutuar 3s ease-in-out infinite;
+  font-size: 60px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  animation: flutuar 3s ease-in-out infinite;
 }
 
 .carta:nth-child(1) { animation-delay: 0s; }
@@ -37,42 +37,42 @@ h1 {
 .carta:nth-child(3) { animation-delay: 1s; }
 
 @keyframes flutuar {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
 
 #mensagem {
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #fff0f5;
-    border-radius: 15px;
-    display: inline-block;
-    max-width: 400px;
-    box-shadow: 0 0 15px #ffb6c1;
-    color: #8b2c4a;
-    font-weight: bold;
-    font-size: 1.3em;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff0f5;
+  border-radius: 15px;
+  display: inline-block;
+  max-width: 400px;
+  box-shadow: 0 0 15px #ffb6c1;
+  color: #8b2c4a;
+  font-weight: bold;
+  font-size: 1.3em;
 }
 
 .mensagem-oculta {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 768px) {
-    body {
-        height: auto;
-        padding: 20px;
-    }
-    .cartinhas {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .carta {
-        font-size: 50px;
-    }
-    #mensagem {
-        max-width: 90%;
-        font-size: 1.1em;
-    }
+  body {
+      height: auto;
+      padding: 20px;
+  }
+  .cartinhas {
+      flex-direction: column;
+      gap: 10px;
+  }
+  .carta {
+      font-size: 50px;
+  }
+  #mensagem {
+      max-width: 90%;
+      font-size: 1.1em;
+  }
 }
