@@ -2,20 +2,26 @@ body {
     background: #ffeef2;
     font-family: 'Comic Sans MS', sans-serif;
     text-align: center;
-    padding: 60px;
+    padding: 0;
     color: #d6336c;
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
 }
 
 h1 {
     font-size: 2.5em;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .cartinhas {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -32,13 +38,13 @@ h1 {
 
 @keyframes flutuar {
     0%   { transform: translateY(0); }
-    50%  { transform: translateY(-20px); }
+    50%  { transform: translateY(-10px); }
     100% { transform: translateY(0); }
 }
 
 #mensagem {
-    margin-top: 40px;
-    padding: 30px;
+    margin-top: 20px;
+    padding: 20px;
     background-color: #fff0f5;
     border-radius: 15px;
     display: inline-block;
@@ -51,4 +57,22 @@ h1 {
 
 .mensagem-oculta {
     display: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+    .cartinhas {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .carta {
+        font-size: 50px;
+    }
+    #mensagem {
+        max-width: 90%;
+        font-size: 1.1em;
+    }
 }
